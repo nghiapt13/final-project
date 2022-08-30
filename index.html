@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <title>AURUM</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header_top">
-            <div class="headertop.left">
+            <div class="headertop_left">
                 <span><a href="#">LOGIN</a>
                     or
                     <a href="#">REGISTER</a></span>
-                <span> | </span>
+                <span style="margin:0 1rem ;"> | </span>
                 <span>
                     <p id="date"></p>
                 </span>
@@ -34,8 +35,48 @@
                 <SPAN>ENGLISH</SPAN>
             </div>
         </div>
-        <div class="header.bot">
-            
+        <div class="header__bot">
+            <div class="header__menu">
+                <div class="header__menu__left">
+                    <div class="menu__logo">
+                        <img src="./src/img/logo.png" alt="" width="97" height="20">
+                    </div>
+                    <div style="text-transform: uppercase;" class="menu__span">
+                        <span class="home active">home</span>
+                        <span class="shop">shop</span>
+                        <span class="pages">pages</span>
+                        <span class="blog">blog</span>
+                        <span class="short">shortcodes</span>
+                        <span class="buy">buy now</span>
+                    </div>
+                </div>
+                <div class="header__menu__right">
+                    <span class="find">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24px" height="24px"
+                            viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                            <path id="search-svg" d="M460.355,421.59L353.844,315.078c20.041-27.553,31.885-61.437,31.885-98.037
+                            
+                                C385.729,124.934,310.793,50,218.686,50C126.58,50,51.645,124.934,51.645,217.041c0,92.106,74.936,167.041,167.041,167.041
+                            
+                                c34.912,0,67.352-10.773,94.184-29.158L419.945,462L460.355,421.59z M100.631,217.041c0-65.096,52.959-118.056,118.055-118.056
+                            
+                                c65.098,0,118.057,52.959,118.057,118.056c0,65.096-52.959,118.056-118.057,118.056C153.59,335.097,100.631,282.137,100.631,217.041
+                            
+                                z"></path>
+                        </svg>
+                    </span>
+                    <span class="cart">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24px" height="24px"
+                            viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                            <path id="cart_1-svg" d="M67.851,183.609l-17.682-40h289.744l-12.576,40H67.851z M82.271,218.277l17.461,39.498h205.084
+                                l12.42-39.498H82.271z M389.858,105.109l-59.18,188.166H115.231l17.627,40h227.068l59.178-188.166h29.98l12.746-40H389.858z
+                                M289.925,353.109c-14.852,0-26.891,12.039-26.891,26.891s12.039,26.891,26.891,26.891s26.891-12.039,26.891-26.891
+                                S304.776,353.109,289.925,353.109z M201.042,353.109c-14.852,0-26.891,12.039-26.891,26.891s12.039,26.891,26.891,26.891
+                                s26.891-12.039,26.891-26.891S215.894,353.109,201.042,353.109z"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
         </div>
     </header>
     <script src="./src/js/script.js"></script>

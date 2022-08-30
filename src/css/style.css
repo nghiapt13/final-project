@@ -13,15 +13,14 @@ html{
     justify-content: space-around;
     background-color: black;
     color: grey;
-    height: 5rem;
+    height: 2rem;
     padding: 0.5rem;
     font-size: 1.2rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 2rem;
     font-family: 'Roboto', sans-serif;
+    padding-top: 1.5rem;
+}
+.headertop_left{
+    display: flex;
 }
 .header_top a{
     color:grey;
@@ -31,6 +30,53 @@ html{
     color: white;
     transition: 0.3s;
 }
-.header_top_right{
+/* .header_top_right{
     padding
+} */
+.header__bot{
+    margin-top: 2rem;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+.header__menu__left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.menu__span{
+    padding-left: 3rem;
+}
+.menu__span span{
+    padding: 0 1rem;
+    position: relative;
+
+
+
+}
+
+.menu__span span::before {
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: black;
+    display: none;
+}
+.active .menu__span span::before {
+    display: block;
+}
+.menu__logo img{
+    padding-right:3rem ;
+    padding-left: 7rem;
+}
+.header__menu__right svg{
+    padding:1rem ;
 }
