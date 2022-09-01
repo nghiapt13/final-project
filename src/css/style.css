@@ -110,6 +110,10 @@ html{
     text-decoration:underline;
     transition: 0.3s;
 }
+.list__menu i{
+    width: 2.4rem;
+    height: 2.4rem;
+}
 .footer__bot{
     border-top: 0.1rem solid grey;
     margin-left: 10%;
