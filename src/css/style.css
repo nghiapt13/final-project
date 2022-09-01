@@ -11,7 +11,7 @@ html{
 .header_top{
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: #222222;
     color: grey;
     height: 2rem;
     padding: 0.5rem;
@@ -79,4 +79,84 @@ html{
 }
 .header__menu__right svg{
     padding:1rem ;
+}
+.footer{
+    background-color: #222222;
+    height: 40rem;
+    color:grey;
+    font-weight: 300;
+}
+.footer__top{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    align-items: center;
+    text-transform: uppercase;
+}
+.footer__top h3{
+    font-size: 1.6rem;
+}
+.footer__top ul{
+    list-style: none;
+    font-size: 1.4rem;
+}
+.footer__top a{
+    text-decoration: none;
+    color: grey;
+}
+.footer__top a:hover{
+    color: white;
+    text-decoration:underline;
+    transition: 0.3s;
+}
+.footer__bot{
+    border-top: 0.1rem solid grey;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.bot__left{
+    margin-top: 5rem;
+    font-weight: 300;
+}
+.bot__left h2 a{
+    text-decoration: none;
+    color: #4d4d4d;
+}
+.bot__left h2 a:hover{
+    text-decoration:underline;
+    color: #551a8b;
+}
+.bot__left ul{
+    list-style: none;
+    font-size: 1.2rem;
+}
+.bot__left li{
+    float: left;
+}
+.footer__bot .bot__left ul li::after{
+    content: "";
+    display: inline-block;
+    height: 1.5rem;
+    width: 0.1rem;
+    margin: 0 1rem;
+    background-color: #3a3a3a;
+
+}
+.list__nav a {
+    color: grey;
+    text-decoration: none;
+}
+.list__nav li :hover{
+    color: white;
+}
+.bot__right{
+    margin-top: 6rem;
+}
+.payment-methods li{
+    list-style: none;
+    float: left;
+    margin-left: 2rem;
 }
