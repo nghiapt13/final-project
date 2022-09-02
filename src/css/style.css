@@ -6,7 +6,7 @@
 html{
     font-size: 62.5%;
     font-family: 'Roboto Condensed', sans-serif;
-    
+    box-sizing: border-box;
 }
 .header_top{
     display: flex;
@@ -30,9 +30,6 @@ html{
     color: white;
     transition: 0.3s;
 }
-/* .header_top_right{
-    padding
-} */
 .header__bot{
     margin-top: 2rem;
 }
@@ -82,9 +79,12 @@ html{
 }
 .footer{
     background-color: #222222;
-    height: 40rem;
+    height: 30rem;
     color:grey;
     font-weight: 300;
+}
+.footer .container{
+    padding-top: 2.5rem;
 }
 .footer__top{
     display: flex;
@@ -110,8 +110,21 @@ html{
     text-decoration:underline;
     transition: 0.3s;
 }
-.list__menu i{
-    
+.list_6{
+    width: 12rem;
+    margin-right: 0.5rem;
+}
+.list_6 h3{
+    margin-top: -2rem;
+}
+.list_6 li{
+    float: left;
+    font-size: 2rem;
+    padding: 0 2px;
+}
+.list__container h3{
+    color: #fff;
+    font-weight: 300;
 }
 .footer__bot{
     border-top: 0.1rem solid grey;
@@ -162,4 +175,13 @@ html{
     list-style: none;
     float: left;
     margin-left: 2rem;
+}
+.payment-methods img{
+    vertical-align: middle;
+}
+.payment-methods li a{
+    opacity: .5;
+}
+.payment-methods li a:hover{
+    opacity: 1;
 }
