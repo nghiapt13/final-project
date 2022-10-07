@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="shortcut icon" href="./src/img/favicon-1.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -36,22 +37,71 @@
                 <span> | </span>
                 <span><a href="#">MY ACCOUNT</a></span>
                 <span> | </span>
-                <SPAN>ENGLISH</SPAN>
+                <SPAN class="lan"> ENGLISH <img style="vertical-align: middle;" src="./src/img/flag_great_britain.png"
+                        width="16px" height="16px" alt="">
+                    <div class="mn_language">
+                        <a href="#">português <img src="./src/img/flag_brazil.png" alt=""></a>
+                        <a href="#">deutsch <img src="./src/img/flag_germany.png" alt=""></a>
+                        <a href="#">french <img src="./src/img/flag_france.png" alt=""></a>
+                    </div>
+                </SPAN>
             </div>
         </div>
-        <div class="header__bot">
+        <div class="header__bot" id="head__stick">
             <div class="header__menu">
                 <div class="header__menu__left">
                     <div class="menu__logo">
                         <img src="./src/img/logo.png" alt="" width="97" height="20">
                     </div>
                     <div style="text-transform: uppercase;" class="menu__span">
-                        <span class="home active">home</span>
-                        <span class="shop">shop</span>
-                        <span class="pages">pages</span>
-                        <span class="blog">blog</span>
-                        <span class="short">shortcodes</span>
-                        <span class="buy">buy now</span>
+                        <div class="menu__item">
+                            <span class="home">home</span>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    HOME 1 23
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu__item">
+                            <span class="shop">shop</span>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    HOME 1 23
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu__item">
+                            <span class="pages">pages</span>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    HOME 1 23
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu__item">
+                            <span class="blog">blog</span>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    HOME 1 23
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu__item">
+                            <span class="short">shortcodes</span>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    HOME 1 23
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu__item">
+                            <span class="buy">buy now</span>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    HOME 1 23
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="header__menu__right">
@@ -85,7 +135,356 @@
     </header>
     <div class="wrapper">
         <div class="content">
-            
+            <!-- Banner -->
+            <div class="banner">
+                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img src="./src/img/bg-1-1.png" alt=""></li>
+                            <li class="splide__slide"><img src="./src/img/bg-2.png" alt=""></li>
+                            <li class="splide__slide"><img src="./src/img/bg-1-1.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Trend banner -->
+            <div class="trend">
+                <div class="trend__text">
+                    <p class="line1">TRENDING</p>
+                    <p>MOST TRENDY CLOTHES</p>
+                    <span class="dash"></span>
+                </div>
+                <div class="trend__content">
+                    <div class="merc">
+                        <div class="merc__img">
+                            <img src="./src/img/merc1.jpg" alt="">
+                        </div>
+                        <div class="merc__info">
+                            <div class="merc__name">
+                                <span>PAUL SMITH</span><i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="merc__type">
+                                <p>ACCESSORIES</p>
+                            </div>
+                            <div class="merc__price">
+                                <p>£45.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="merc">
+                        <div class="merc__img">
+                            <img src="./src/img/merc1.2.jpg" alt="">
+                        </div>
+                        <div class="merc__info">
+                            <div class="merc__name">
+                                <span>POCKET WATCH</span><i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="merc__type">
+                                <p>ACCESSORIES</p>
+                            </div>
+                            <div class="merc__price">
+                                <p>£16.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="merc">
+                        <div class="merc__img">
+                            <img src="./src/img/merc1.3.jpg" alt="">
+                        </div>
+                        <div class="merc__info">
+                            <div class="merc__name">
+                                <span>ASAP BAG</span><i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="merc__type">
+                                <p>BAGS</p>
+                            </div>
+                            <div class="merc__price">
+                                <span class="oldprice"><del>£34.00</del></span><span class="newprice">£29.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="merc">
+                        <div class="merc__img">
+                            <img src="./src/img/merc1.4.jpg" alt="">
+                        </div>
+                        <div class="merc__info">
+                            <div class="merc__name">
+                                <span>CHEAP MONDAY</span><i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="merc__type">
+                                <p>MEN</p>
+                            </div>
+                            <div class="merc__price">
+                                <span class="oldprice"><del>£35.00</del></span><span class="newprice">£20.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <!-- Overlay -->
+            <div class="overlay">
+                <div class="item">
+                    <div class="ovlay"></div>
+                    <img class="ovlay_i" src="./src/img/ovlay1.jpg" alt="">
+                    <div class="ovlay__text">
+                        <p>Men</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ovlay"></div>
+                    <img class="ovlay_i" src="./src/img/ovlay2.jpg" alt="">
+                    <div class="ovlay__text">
+                        <p>shoes</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ovlay"></div>
+                    <img class="ovlay_i" src="./src/img/ovlay3.jpg" alt="">
+                    <div class="ovlay__text">
+                        <p>women</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <!-- sale -->
+            <div class="salebanner">
+                <div class="sale__content">
+                    <div class="sale_text">
+                        <p class="s_1">NOVEMBER SALE</p>
+                        <P class="s_2">FREE SHIPPING OVER $125 FOR INTERNATIONAL ORDERS</P>
+                    </div>
+                    <div class="sale_button">
+                        <button>Shop now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Bestseller -->
+            <div class="best">
+                <div class="best__text">
+                    <p class="line1">BESTSELLERS</p>
+                    <p>MOST SOLD ITEMS IN THE MARKET</p>
+                    <span class="dash"></span>
+                </div>
+                <div class="best__content">
+                    <div class="merc">
+                        <div class="merc__img">
+                            <img src="./src/img/merc2.1.jpg" alt="">
+                        </div>
+                        <div class="merc__info">
+                            <div class="merc__name">
+                                <span>SANDTWIST</span><i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="merc__type">
+                                <p>BAGS</p>
+                            </div>
+                            <div class="merc__price">
+                                <p>£20.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="merc">
+                        <div class="merc__img">
+                            <img src="./src/img/merc2.2.jpg" alt="">
+                        </div>
+                        <div class="merc__info">
+                            <div class="merc__name">
+                                <span>MANGO</span><i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="merc__type">
+                                <p>BAGS</p>
+                            </div>
+                            <div class="merc__price">
+                                <p>£20.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="merc">
+                        <div class="merc__img">
+                            <img src="./src/img/merc2.3.jpg" alt="">
+                        </div>
+                        <div class="merc__info">
+                            <div class="merc__name">
+                                <span>LEATHER</span><i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="merc__type">
+                                <p>BAGS</p>
+                            </div>
+                            <div class="merc__price">
+                                <p>£20.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="merc">
+                        <div class="merc__img">
+                            <img src="./src/img/merc2.4.jpg" alt="">
+                        </div>
+                        <div class="merc__info">
+                            <div class="merc__name">
+                                <span>DKNY BAG</span><i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="merc__type">
+                                <p>BAGS</p>
+                            </div>
+                            <div class="merc__price">
+                                <p>£20.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="merc_bottom">
+                <div class="mercb_box">
+                    <p class="box_head">featured</p>
+                    <br>
+                    <ul class="mercb_content">
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mercb_box">
+                    <p class="box_head">new products</p>
+                    <br>
+                    <ul class="mercb_content">
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mercb_box">
+                    <p class="box_head">on-sale</p>
+                    <br>
+                    <ul class="mercb_content">
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mercb_box">
+                    <p class="box_head">top rated</p>
+                    <br>
+                    <ul class="mercb_content">
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                        <li class="mercb_item">
+                            <a href="#"><img src="./src/img/merc_sm1.jpg" alt=""></a>
+                            <span class="merc_in4">
+                                <a class="name" href="#">billionare boys</a>
+                                <p class="price">£20.00</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- carousel -->
+            <div class="carousel">
+                <section id="thumbnail-carousel" class="splide_carousel"
+                    aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./src/img/dkny.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./src/img/rayban.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./src/img/jackjones.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./src/img/onnly.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./src/img/selected.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./src/img/bershka.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./src/img/hm.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./src/img/zara.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./src/img/mango.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./src/img/pullbear.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
     <footer class="footer">
@@ -206,38 +605,33 @@
                     <ul class="payment-methods">
                         <li>
                             <a href="#">
-                                <img src="./src/img/ups.png"
-                                    loading="lazy" alt="ups" width="19" height="22">
+                                <img src="./src/img/ups.png" loading="lazy" alt="ups" width="19" height="22">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./src/img/dhl.png"
-                                    loading="lazy" alt="dhl" width="73" height="10">
+                                <img src="./src/img/dhl.png" loading="lazy" alt="dhl" width="73" height="10">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./src/img/fedex.png"
-                                    loading="lazy" alt="fedex" width="52" height="14">
+                                <img src="./src/img/fedex.png" loading="lazy" alt="fedex" width="52" height="14">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./src/img/visa.png"
-                                    loading="lazy" alt="visa" width="38" height="11">
+                                <img src="./src/img/visa.png" loading="lazy" alt="visa" width="38" height="11">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./src/img/paypal.png"
-                                    loading="lazy" alt="paypal" width="55" height="15">
+                                <img src="./src/img/paypal.png" loading="lazy" alt="paypal" width="55" height="15">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./src/img/mastercard.png"
-                                    loading="lazy" alt="mastercard" width="28" height="17">
+                                <img src="./src/img/mastercard.png" loading="lazy" alt="mastercard" width="28"
+                                    height="17">
                             </a>
                         </li>
                     </ul>
@@ -246,6 +640,7 @@
         </div>
     </footer>
     <script src="./src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
 </body>
 
 </html>
