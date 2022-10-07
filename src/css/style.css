@@ -170,9 +170,7 @@ html {
 
 /* content */
 /* banner */
-.splide__slide img{
-    max-width: 100rem;
-}
+
 /* trend banner */
 .trend__text {
     margin-left: 15rem;
@@ -411,9 +409,9 @@ html {
     /* left: 15%; */
     
 }
-.splide__slide img{
+/* .splide__slide img{
     max-width: 200px;
-}
+} */
 
 /* footer */
 .footer {
